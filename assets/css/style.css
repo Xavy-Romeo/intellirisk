@@ -139,6 +139,7 @@ nav a {
     padding: 30px 50px;
     display: flex;
 }
+/* start sidebar styles */
 .sidebar {
     width: 5%;
 }
@@ -156,6 +157,9 @@ nav a {
 .logout-icon {
     margin-top: 200px;
 }
+/* end sidebar styles */
+
+/* start score styles */
 .score {
     background: white;
     height: 100%;
@@ -328,3 +332,152 @@ nav a {
 .pets-icon {
     background: rgb(246,241,224);
 }
+/* end score styles */
+
+/* start right dash column styles */
+.right-columns-dash {
+    height: 100%;
+    width: 30%;
+    margin: 0 20px;
+}
+.dash-square {
+    height: 47.5%;
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+}
+.circle {
+    background: var(--btn-blue);
+    background-color: var(--btn-blue);
+    margin-bottom: 8%;
+}
+.recommendations {
+    background: white;
+    background-color: white;
+}
+.profile {
+    background: white;
+    background-color: white;
+    margin-bottom: 8%;
+}
+.chat {
+    background: white;
+    background-color: white;
+}
+/* end right dash column styles */
+
+/* start progress circle column styles */
+.progress-circle {
+    margin: 0 auto 30px auto;
+    width: 250px;
+    height: 250px;
+    background: rgb(76,222,252);
+    border-radius: 50%;
+}
+.mask,
+.fill {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+}
+.fill {
+    clip: rect(200px, 125px, 250px, 0px);
+    background-color: rgb(0, 25, 121);
+    transform: rotate(120deg);
+}
+
+.inside-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: var(--btn-blue);
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    
+}
+.inside-circle img {  
+    height: 30px;
+    margin-top: 40px;
+}
+.inside-circle h1 {
+    margin: -10px 0;
+    line-height: 120px;
+    font-weight: 500;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+}
+.inside-circle p {
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+}
+.inside-circle h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(66,103,230);
+    text-transform: uppercase;
+}
+.update-score-btn {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(23,81,226);
+    text-align: center;
+}
+.update-score-btn p {
+    color: white;
+    padding: 30px 0;
+    font-size: 20px;
+}
+/* end progress circle column styles */
+
+/* start recommendations column styles */
+.recommendations h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+.rec-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rec-row img {
+    height: 80px;
+    border-radius: 20px;
+}
+.pic-column {
+    position: relative;
+    margin-right: 20px;
+}
+.play-icon {
+    position: absolute;
+    border-radius: 5px;
+    height: 20px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 15px;
+}
+.play-icon img {
+    height: 100%;
+    padding: 5px;
+    transform: rotate(90deg);
+}
+.info-column h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.info-column p {
+    color: rgb(161,173,187);
+}
+/* end recommendations column styles */
