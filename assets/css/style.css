@@ -154,6 +154,10 @@ nav a {
     margin-bottom: 40px;
     padding: 10px;
 }
+.side-logo img {
+    height: 70px;
+    width: 70px;
+}
 .logout-icon {
     margin-top: 200px;
 }
@@ -343,7 +347,7 @@ nav a {
 .dash-square {
     height: 47.5%;
     width: 100%;
-    padding: 25px;
+    padding: 30px 40px;
     border-radius: 20px;
 }
 .circle {
@@ -368,7 +372,7 @@ nav a {
 
 /* start progress circle column styles */
 .progress-circle {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 25px auto;
     width: 250px;
     height: 250px;
     background: rgb(76,222,252);
@@ -437,8 +441,8 @@ nav a {
 
 /* start recommendations column styles */
 .recommendations h3 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 600;
     line-height: 1;
     color: var(--text-primary);
     margin-bottom: 20px;
@@ -450,7 +454,7 @@ nav a {
 }
 .rec-row img {
     height: 80px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .pic-column {
     position: relative;
@@ -481,3 +485,149 @@ nav a {
     color: rgb(161,173,187);
 }
 /* end recommendations column styles */
+
+/* start profile column styles */
+.profile-container {
+    height: 120px;
+    width: 120px;
+    margin: 20px auto;
+    
+}
+.profile-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+}
+.profile h3 {
+    font-size: 32px;
+    color: var(--text-primary);
+    font-weight: 600;
+    text-align: center;
+}
+.profile p {
+    font-size: 18px;
+    color: rgb(161,173,187);
+    font-weight: 400;
+    text-align: center;
+}
+.profile p span {
+    color: var(--btn-blue);
+    font-weight: 700;
+}
+.premium-insurance-btn {
+    width: 100%;
+    background: rgb(231,242,252);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.diamond-container {
+    height: 60px;
+    width: 60px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.diamond-container img {
+    height: 100%;
+    padding: 20px;
+}
+.premium-insurance-btn h6 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--btn-blue);
+}
+.premium-insurance-btn p {
+    font-size: 18px;
+    color: rgb(161,173,187);
+    font-weight: 400;
+    text-align: left;
+}
+/* end profile column styles */
+
+/* start chat column styles */
+.chat h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+.hello-container {
+    display: flex; 
+    justify-content: flex-end;
+}
+.hello {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 10px 10px 0 10px;
+    width: 110px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.hello p {
+    color: var(--text-primary);
+}
+.hello p span{
+    font-size: 24px;
+}
+.support-container {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.profile-chat {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+.profile-chat img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.support {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 10px 10px 10px 0px;
+    width: 250px;
+    padding: 10px 15px;
+    background: var(--btn-blue);
+}
+.support p {
+    color: white;
+}
+.send-container {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    margin-top: 75px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+.send-container p {
+    font-size: 16px;
+    color: rgb(161,173,187);
+    font-weight: 400;
+}
+.send-icon {
+    padding: 15px;
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    background: var(--btn-blue);
+}
+.send-icon img {
+    height: 100%;
+    width: 100%;
+}
+/* end chat column styles */
