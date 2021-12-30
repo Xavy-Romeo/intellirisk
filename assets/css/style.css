@@ -78,8 +78,7 @@ nav a {
 
 /* start top section styles */
 .top-section {
-    height: 700px;
-    background: linear-gradient(var(--bg-light-blue), var(--bg-offwhite));
+    background: linear-gradient(var(--bg-light-blue), white);
 }
 .top-section h1 {
     font-size: 100px;
@@ -92,6 +91,8 @@ nav a {
 .top-section a {
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    cursor: default;
 }
 .top-section a button {
     padding: 27px 35px;
@@ -102,7 +103,42 @@ nav a {
     background: var(--btn-blue);
     color: var(--text-white);
     letter-spacing: 1.1px;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,.2), 0px 3px 4px 0px rgba(0,0,0,.14), 0px 1px 8px 0px rgba(0,0,0,.12);
 }
+.monitor-container {
+    position: relative;
+    transform: rotateX(40deg);
+}
+.dash-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.dash-container img {
+    width: 50%;
+}
+.mockup-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 14%;
+    left: 27.5%;
+}
+.mockup-container img {
+    width: 45.5%;
+}
+.keyboard-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+}
+.keyboard-container img {
+    width: 40%;
+    transform: rotate(352.5deg);
+    margin-left:7%;
+}
+
 /* end top section styles */
 
 /* start media queries */
