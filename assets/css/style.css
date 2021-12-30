@@ -106,9 +106,13 @@ nav a {
     cursor: pointer;
     box-shadow: 0px 3px 3px -2px rgba(0,0,0,.2), 0px 3px 4px 0px rgba(0,0,0,.14), 0px 1px 8px 0px rgba(0,0,0,.12);
 }
+.top-mockup {
+    position: relative;
+}
 .monitor-container {
     position: relative;
     transform: rotateX(40deg);
+    z-index: 10;
 }
 .dash-container {
     display: flex;
@@ -132,14 +136,56 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: -5%;
+    z-index: 10;
 }
 .keyboard-container img {
     width: 40%;
     transform: rotate(352.5deg);
     margin-left:7%;
+    z-index: 10;
 }
-
+.top-grid-right {
+    position: absolute;
+    right: 19%;
+    top: -4%;
+    width: 220px;
+    z-index: 1;
+}
+.top-grid-left {
+    position: absolute;
+    left: 19%;
+    bottom: 26%;
+    width: 330px;
+    z-index: 1;
+}
 /* end top section styles */
+
+/* start plus icon grid styles */
+.grid-row {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.grid-row img {
+    height: 28px;
+    width: 28px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid4 {
+    width: 25%;
+}
+.grid6 {
+    width: 16.667%;
+}
+.grid8 {
+    width: 12.5%;
+}
+/* end plus icon grid styles */
 
 /* start media queries */
 @media screen and (min-width: 1280px) {
