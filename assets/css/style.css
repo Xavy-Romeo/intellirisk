@@ -493,6 +493,68 @@ nav a {
     background: rgb(6,19,67);
     right: 35%;
     z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.medical-blue-container {
+    transform: skewX(30deg);
+    background:rgb(75,204,218); 
+    height: 300px; 
+    width: 280px; 
+    margin-top: 350px; 
+    margin-right: -190px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.stethoscope {
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.1);
+}
+.stethoscope img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.medical-blue-container h5 {
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.status-bar-container {
+    height: 15px;
+    display: flex;
+    width: 100%;
+}
+.bar {
+    display: flex;
+    width: 12.5%;
+}
+.bar img {
+    height: 100%;
+    width: 100%;
+    transform: rotateY(70deg);
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.status p {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: rgb(173,233,239);
 }
 .give-column {
     width: 50%;
@@ -535,7 +597,10 @@ nav a {
     width: 440px;
     z-index: 3;
     right: 13%;
-    top: -14%;
+    top: -15.5%;
+}
+.blob-grid .grid-row {
+    margin: 23px 0 !important;
 }
 .blob-container {
     position: relative;
@@ -556,7 +621,7 @@ nav a {
     top: 50px; 
     right: 50px; 
     height: 400px; 
-    width: 400px; 
+    width: 400px;
 }
 .hex-relative {
     position: relative;
@@ -643,50 +708,49 @@ nav a {
     top: 103px;
     right: 30px;
 }
-.score-grid {
-    display: flex;
-}
-.score-columns {
-    width: 50%;
-}
-.score-columns1 {
-    margin-right: 20px;
-}
-.score-column {
-    display: flex;
-
-    padding: 15px;
-    border-radius: 20px;
-}
-.score-column img {
-    height: 25px;
-}
-.score-column h4 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-.score-column p {
-    color: rgb(161,173,187);
-}
 .medical {
     background: rgb(224,253,255);
     background-color: rgb(224,253,255);
 }
-.icon-div {
-    border-radius: 10px;
-    height: 50px;
-    width: 60px;
-    margin-right: 10px;
+/* end solution section styles */
+
+/* start protection section styles */
+.protection-section {
+    padding: 0 50px;
+}
+.categories-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end;
+}
+.category-row {
     display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
+}
+.category-column {
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    width: 210px; 
+}
+.icon-div {
+    height: 35px;
+    width: 40px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 .house-icon {
     background: rgb(246,237,250);
 }
 .dollar-icon {
     background: rgb(255,233,237);
+}
+.dollar-icon img {
+    height: 80%;
 }
 .damage-icon {
     background: rgb(222,244,238);
@@ -700,9 +764,19 @@ nav a {
 .pets-icon {
     background: rgb(246,241,224);
 }
-/* end solution section styles */
-
-
+.pets-icon img {
+    height: 80%;
+}
+.category-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.category-column p {
+    color: rgb(161,173,187);
+    font-size: 12px; 
+}
+/* end protection section styles */
 
 
 
