@@ -1,6 +1,7 @@
 :root {
     --text-primary: rgb(12,25,64);
     --text-white: rgb(250,250,250);
+    --text-dark-gray: rgb(111,125,140);
     --bg-light-blue: rgb(234,240,249);
     --bg-dark-blue: rgb(6,18,66);
     --bg-offwhite: rgb(248,248,248);
@@ -51,7 +52,7 @@ header {
     margin-left: 12px;
 }
 nav a {
-    color: rgb(111,125,140);
+    color: var(--text-dark-gray);
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
@@ -186,7 +187,6 @@ nav a {
 /* start top section bottom styles */
 .top-section-bottom {
     background: white;
-    height: 1000px;
     padding: 0 50px;
     margin-top: 80px;
 }
@@ -270,6 +270,79 @@ nav a {
     left: 5%;
     top: -40%;
     z-index: 1;
+}
+.analyze-middle {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+.analyze-middle-column {
+    width: 25%;
+}
+.analyze-middle-column span{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--btn-blue);
+}
+.analyze-middle-column h1 {
+    font-size: 110px;
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: .85;
+    margin: 0 0 30px 20px;
+}
+.analyze-middle-column p {
+    font-size: 16px;
+    color: var(--text-dark-gray);
+    font-weight: 500;
+    margin-left: 20px;
+}
+.car-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.car-bottom-column {
+    width: 25%;
+    height: 300px;
+    z-index: 10;
+}
+.car {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+.car img {
+    height: 100%;
+    border-radius: 20px;
+}
+.kitchen {
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    margin-top: 180px;
+}
+.kitchen img {
+    height: 100%;
+    border-radius: 20px;
+}
+.pug {
+    height: 120px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 60px;
+}
+.pug img {
+    height: 100%;
+    border-radius: 20px;
+}
+.kitchen-grid {
+    position: absolute;
+    width: 220px;
+    z-index: 1;
+    left: 33.5%;
+    top: 10%;
 }
 /* end top section bottom styles */
 
