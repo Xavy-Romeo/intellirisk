@@ -273,7 +273,7 @@ nav a {
 }
 .analyze-middle {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 150px;
 }
 .analyze-middle-column {
@@ -345,6 +345,379 @@ nav a {
     top: 10%;
 }
 /* end top section bottom styles */
+
+/* start solution section styles */
+.solution-section {
+    background: rgb(6,19,67);
+    color: white;
+    padding: 200px 50px 0 50px;
+}
+.solution-title h1 {
+    font-size: 110px;
+    text-align: center;
+    font-weight: 400;
+}
+.ai-analyze-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.ai-analyze-column {
+    width: 18%;
+}
+.ai-icon-container {
+    position: relative;
+}
+.pie {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.pie img {
+    height: 100%;
+    width: 100%;    
+}
+.chat {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 30px;
+}
+.chat img {
+    height: 100%;
+    width: 100%;
+}
+.graph {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 40px;
+}
+.graph img {
+    height: 100%;
+    width: 100%;
+}
+.ai-plus {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+.first-pie {
+    left: 20px;
+    top: -10px;
+}
+.second-pie {
+    left: 45px;
+    top: -10px;
+}
+.third-pie {
+    left: 45px;
+    top: 15px;
+}
+.fourth-pie {
+    left: -10px;
+    bottom: 8px;
+}
+.first-chat {
+    left: 40px;
+    top: -12px;
+}
+.second-chat {
+    left: 40px;
+    bottom: 3px;
+}
+.third-chat {
+    left: -20px;
+    bottom: 20px;
+}
+.first-graph {
+    left: 15px;
+    top: -22px;
+}
+.second-graph {
+    left: 35px;
+    top: -22px;
+}
+.third-graph {
+    left:35px;
+    top: 0px;
+}
+.fourth-graph {
+    left: -18px;
+    bottom: -15px;
+}
+.ai-analyze-column h3 {
+    font-size: 34px;
+    margin: 20px 0;    
+}
+.ai-analyze-column p {
+    color: rgb(97,128,188);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 17px;
+    height: 100px;
+}
+.learn-more-container{
+    width: 120px;
+}
+.learn-more-container a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(75,210,254);
+    font-size: 15px;
+    font-weight: 400;
+}
+.learn-more-icon {
+    height: 15px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.learn-more-icon img {
+    height: 100%;
+}
+.how-title h1 {
+    font-size: 110px;
+    text-align: center;
+    font-weight: 400;
+    margin: 150px 0 100px 0;
+}
+.give-row {
+    display: flex; 
+    margin-right: -50px;
+    position: relative;
+}
+.slant {
+    width: 1000px;
+    height: 500px;
+    transform: skewX(-30deg);
+    position: absolute;
+    background: rgb(6,19,67);
+    right: 35%;
+    z-index: 1;
+}
+.give-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.give-blob-column {
+    width: 50%; 
+    background: white; 
+    height: 500px; 
+}
+.give-numbers-column {
+    margin-right: 100px;
+}
+.give-numbers-column div {
+    padding: 30px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.give-numbers-column div p {
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(97,128,188);
+}
+.number-two {
+    border: 1px solid rgb(97,128,188);
+}
+.number-two p {
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.give-column h2 {
+    font-size: 60px;
+    font-weight: 400;
+}
+.blob-grid {
+    position: absolute;
+    width: 440px;
+    z-index: 3;
+    right: 13%;
+    top: -14%;
+}
+.blob-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.blob {
+    position: absolute;
+    height: 100%;
+    right: 135px;
+    top: 140px;
+}
+.blob img {
+    height: 45%;
+}
+.hex-container {
+    position: absolute; 
+    top: 50px; 
+    right: 50px; 
+    height: 400px; 
+    width: 400px; 
+}
+.hex-relative {
+    position: relative;
+}
+.hex-1 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;   
+}
+.hex-2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 80%;
+    width: 80%;
+}
+.hex-3 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    height: 60%;
+    width: 60%;
+}
+.hex-4 {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    height: 40%;
+    width: 40%;
+}
+.hex-5 {
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    height: 20%;
+    width: 20%;
+}
+.hex-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgb(235,237,240);
+    background-color: rgb(235,237,240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.hex-icon img {
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}
+.hex-home {
+    top: 14px;
+    left: 185px;
+}
+.hex-damage {
+    top: 103px;
+    left: 30px;
+}
+.hex-pets {
+    top: 274px;
+    left: 30px;
+}
+.hex-income {
+    top: 363px;
+    left: 185px;
+}
+.hex-medical {
+    top: 265px;
+    right: 7px;
+    background: rgb(75,204,218);
+    background-color: rgb(75,204,218);
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+}
+.hex-medical img {
+    padding: 15px
+}
+.hex-digital {
+    top: 103px;
+    right: 30px;
+}
+.score-grid {
+    display: flex;
+}
+.score-columns {
+    width: 50%;
+}
+.score-columns1 {
+    margin-right: 20px;
+}
+.score-column {
+    display: flex;
+
+    padding: 15px;
+    border-radius: 20px;
+}
+.score-column img {
+    height: 25px;
+}
+.score-column h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.score-column p {
+    color: rgb(161,173,187);
+}
+.medical {
+    background: rgb(224,253,255);
+    background-color: rgb(224,253,255);
+}
+.icon-div {
+    border-radius: 10px;
+    height: 50px;
+    width: 60px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.house-icon {
+    background: rgb(246,237,250);
+}
+.dollar-icon {
+    background: rgb(255,233,237);
+}
+.damage-icon {
+    background: rgb(222,244,238);
+}
+.digital-icon {
+    background: rgb(254,241,239);
+}
+.medical-icon {
+    background: rgb(75,204,218);
+}
+.pets-icon {
+    background: rgb(246,241,224);
+}
+/* end solution section styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* start plus icon grid styles */
