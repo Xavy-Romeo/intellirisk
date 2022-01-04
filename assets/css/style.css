@@ -344,6 +344,7 @@ nav a {
     padding: 200px 50px 0 50px;
 }
 .solution-title h1 {
+    margin: 50px 0 200px 0;
     font-size: 110px;
     text-align: center;
     font-weight: 400;
@@ -358,6 +359,7 @@ nav a {
 }
 .ai-icon-container {
     position: relative;
+    margin-bottom: 70px;
 }
 .pie {
     height: 50px;
@@ -469,7 +471,7 @@ nav a {
     font-size: 110px;
     text-align: center;
     font-weight: 400;
-    margin: 150px 0 100px 0;
+    margin: 250px 0 180px 0;
 }
 .give-row {
     display: flex; 
@@ -495,11 +497,11 @@ nav a {
     z-index: 1;
 }
 .give-blob-column {
-    width: 40%; 
+    width: 0%; 
     background: white; 
     height: 500px; 
     z-index: 4;
-    margin-left: 20%;
+    margin-left: 42%;
     margin-top: 10px;
     border-radius: 50px;
 }
@@ -528,17 +530,9 @@ nav a {
     font-size: 60px;
     font-weight: 400;
 }
-.blob-grid {
-    position: absolute;
-    width: 440px;
-    z-index: 2;
-    right: 13%;
-    top: -15.5%;
-}
-.blob-grid .grid-row {
-    margin: 23px 0 !important;
-}
+
 .blob-container {
+    margin-left: 100px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -661,7 +655,7 @@ nav a {
     background:rgb(75,204,218); 
     height: 300px; 
     width: 280px; 
-    margin-top: -170px;
+    margin-top: -150px;
     margin-left: 43%; 
     border-radius: 20px;
     padding: 40px 30px;
@@ -967,7 +961,19 @@ nav a {
 .fade {
     opacity: .2;
 }
-
+.blob-grid {
+    position: absolute;
+    width: 440px;
+    z-index: 2;
+    right: 21.5%;
+    top: -15%;
+}
+.blob-grid .grid-row {
+    margin: 23px 0 !important;
+}
+.o0 {
+    opacity: 0;
+}
 .medical-grid {
     position: absolute;
     width: 220px;
