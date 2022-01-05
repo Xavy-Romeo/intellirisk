@@ -603,24 +603,30 @@ nav a {
     line-height: .85;
     margin: 0 0 30px 20px;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1410px) {
     .analyze-middle-column h1 {
         font-size: 90px;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .analyze-middle-column h1 {
         font-size: 75px;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
     .analyze-middle-column h1 {
         font-size: 65px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 920px) {
     .analyze-middle-column h1 {
         font-size: 60px;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 850px) {
+    .analyze-middle-column h1 {
+        font-size: 55px;
     }
 }
 .analyze-middle-column p {
@@ -689,6 +695,11 @@ nav a {
     display: flex;
     justify-content: center; 
     margin-top: 60px;
+}
+@media screen and (max-width: 500px) {
+    .pug {
+        margin-top: 45px;
+    }
 }
 .pug img {
     height: 100%;
@@ -1307,6 +1318,16 @@ nav a {
     margin-bottom: 250px;
     z-index: 5;
 }
+@media screen and (max-width: 720px) {
+    .protection-section {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 400px) {
+    .protection-section {
+        padding: 0 20px;
+    }
+}
 .medical-blue-container {
     background:rgb(75,204,218); 
     height: 300px; 
@@ -1432,11 +1453,21 @@ nav a {
     display: flex;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 470px) {
+    .category-row {
+        display: block;
+    }
+}
 .category-column {
     display: flex;
     padding: 15px;
     border-radius: 20px;
     width: 210px; 
+}
+@media screen and (max-width: 470px) {
+    .category-column {
+        width: 100%;
+    }
 }
 .icon-div {
     height: 35px;
@@ -1481,10 +1512,29 @@ nav a {
     color: rgb(161,173,187);
     font-size: 12px; 
 }
+.protection-title-container {
+    display: flex;
+}
+@media screen and (max-width: 965px) {
+    .protection-title-container {
+        display: block;
+    }
+}
 .protection-title {
     margin-top: 50px;
     margin-left: 240px;
     width: 500px;
+}
+@media screen and (max-width: 1270px) {
+    .protection-title {
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .protection-title {
+        margin-left: 0px;
+        margin-top: 100px;
+    }
 }
 .protection-title h1 {
     font-size: 110px;
@@ -1492,9 +1542,52 @@ nav a {
     line-height: .9;
     color: var(--text-primary);
 }
+@media screen and (max-width: 675px) {
+    .protection-title h1 {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .protection-title h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .protection-title h1 {
+        font-size: 65px;
+        font-weight: 500;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .protection-title h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .protection-title h1 {
+        font-size: 50px;
+        width: 320px;
+    }
+}
 .your-individualized {
     margin: 300px 0 0 70px;
     width: 400px;
+}
+@media screen and (max-width: 965px) {
+    .your-individualized {
+        margin: 100px 0 0 150px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .your-individualized {
+        margin: 40px 0 0 0;
+    }
+}
+@media screen and (max-width: 470px) {
+    .your-individualized {
+        width: 100%;
+    }
 }
 .your-individualized p {
     font-size: 18px;
@@ -1504,6 +1597,25 @@ nav a {
     color: var(--text-dark-gray);
     margin-bottom: 50px;
 }
+@media screen and (max-width: 470px) {
+    .your-individualized p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .your-individualized p {
+        font-size: 13px;
+    }
+}
+.protection-score {
+    display: flex;
+    overflow: hidden;
+}
+@media screen and (max-width: 850px) {
+    .protection-score {
+        display: block;
+    }
+}
 .protection-score-container {
     background: white; 
     height: 500px; 
@@ -1512,6 +1624,24 @@ nav a {
     border-radius: 20px;
     margin-left: 170px;
     box-shadow: -20px -20px 50px 5px rgba(0,0,0,.03);
+}
+@media screen and (max-width: 1375px) {
+    .protection-score-container {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .protection-score-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: -20px -20px 20px 5px rgba(0,0,0,.04), 20px 20px 20px 5px rgba(0,0,0,.04);
+    }
+}
+@media screen and (max-width: 325px) {
+    .protection-score-container {
+        transform: scale(.8);
+    }
 }
 .dash-square {
     margin-top: 30px;
@@ -1589,14 +1719,51 @@ nav a {
 }
 .update-score-btn p {
     color: white;
-    padding: 30px 0;
+    padding: 30px 20px;
     font-size: 17px;
     font-weight: 500;
+}
+@media screen and (max-width: 1400px) {
+    .update-score-btn p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .update-score-btn p {
+        padding: 30px 10px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .update-score-btn p {
+        padding: 30px 20px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .update-score-btn p {
+        padding: 30px 10px;
+        font-size: 15px;
+    }
 }
 .couch {
     margin-top: 100px;
     margin-left: -280px;
     height: 550px; 
+    overflow: none;
+}
+@media screen and (max-width: 1050px) {
+    .couch {
+        margin-left: -300px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .couch {
+        width: 100%;
+        height: 100%; 
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
 }
 .couch img {
     height: 100%;
@@ -1610,10 +1777,79 @@ nav a {
     color: var(--text-primary);
     margin: 300px 0 120px 0;
 }
+@media screen and (max-width: 675px) {
+    .testimonials-title {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .testimonials-title {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .testimonials-title {
+        font-size: 65px;
+        font-weight: 500;
+        width: 400px;
+        margin: 150px 0 50px 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .testimonials-title {
+        font-size: 60px;
+        margin-left: -20%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .testimonials-title {
+        font-size: 60px;
+        margin-left: -15%;
+    }
+}
+@media screen and (max-width: 365px) {
+    .testimonials-title {
+        font-size: 50px;
+        margin-left: -20%;
+    }
+}
+@media screen and (max-width: 330px) {
+    .testimonials-title {
+        font-size: 40px;
+        margin-left: -35%;
+    }
+}
+.testimonial-row {
+    display: flex;
+    overflow: hidden;
+}
+@media screen and (max-width: 1250px) {
+    .testimonial-row {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .testimonial-column-left {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .testimonial-column-left {
+        display: block;
+    }
+}
 .testimonial {
     margin-left: 170px;
     width: 440px;
     background: white;
+}
+@media screen and (max-width: 1400px) {
+    .testimonial {
+        margin-left: 0px;
+    }
 }
 .testimonial p {
     color: rgb(4,25,87);
@@ -1623,6 +1859,25 @@ nav a {
     width: 340px;
     letter-spacing: 1.1px;
     z-index: 10;
+}
+@media screen and (max-width: 450px) {
+    .testimonial p {
+        font-size: 20px;
+        margin: 20px 0;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .testimonial p {
+        font-size: 18px;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .testimonial p {
+        font-size: 16px;
+        width: 50%;
+    }
 }
 .testimonial span {
     font-size: 15px;
@@ -1645,6 +1900,22 @@ nav a {
     margin-top: 100px;
     margin-left: 250px; 
 }
+@media screen and (max-width: 1400px) {
+    .laptop-floor {
+        margin-left: 80px; 
+    }
+}
+@media screen and (max-width: 920px) {
+    .laptop-floor {
+        margin-top: 30px;
+        margin-left: 200px; 
+    }
+}
+@media screen and (max-width: 700px) {
+    .laptop-floor {
+        display: none;
+    }
+}
 .laptop-floor img {
     height: 100%;
     border-radius: 20px;
@@ -1652,13 +1923,29 @@ nav a {
 .testimonial-phone-column {
     margin-left: 100px;
 }
+@media screen and (max-width: 920px) {
+    .testimonial-phone-column {
+        margin-left: 0px;
+    }
+}
 .phone {
     height: 450px;
     margin-bottom: 50px;
 }
+@media screen and (max-width: 700px) {
+    .phone {
+        height: 100%;
+        width: 100%;
+    }
+}
 .phone img {
     height: 100%;
     border-radius: 20px;
+}
+@media screen and (max-width: 700px) {
+    .phone img {
+        width: 100%;
+    }
 }
 .testimonial-profile {
     height: 50px;
