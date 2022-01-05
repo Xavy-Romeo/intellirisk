@@ -15,12 +15,22 @@
     font-weight: 400;
 }
 /* start container styles */
+    .container-flex-center {
+        display: flex;
+        justify-content: center;
+    }
     .container1920 {
         width: 1920px;
     }
-    .container1600 {
-        width: 1600px;
+    @media screen and (max-width: 1919px) {
+        .container1920 {
+            width: 100%;
+        }
     }
+    .container-inner {
+        margin: 0 7.5%; /* 85% inner container */
+    }
+
 /* end container styles */
 
 /* start header styles */
@@ -569,11 +579,11 @@ nav a {
 .analyze-middle-column {
     width: 25%;
 }
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
     .analyze-middle-column {
       animation: marquee infinite 20s linear;
     }
-}
+} */
 @media screen and (max-width: 800px) {
     .analyze-middle-column {
         animation: none;
@@ -699,50 +709,107 @@ nav a {
     color: white;
     padding: 200px 50px 0 50px;
 }
+@media screen and (max-width: 500px) {
+    .solution-section {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 400px) {
+    .solution-section {
+        padding: 100px 20px 0 20px;
+    }
+}
 .solution-title h1 {
     margin: 50px 0 200px 0;
     font-size: 110px;
     text-align: center;
     font-weight: 400;
 }
+@media screen and (max-width: 500px) {
+    .solution-title h1 {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .solution-title h1 {
+        margin: 50px 0 100px 0;
+    }
+}
+@media screen and (max-width: 365px) {
+    .solution-title h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .solution-title h1 {
+        font-size: 70px;
+    }
+}
 .ai-analyze-row {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
 }
+@media screen and (max-width: 900px) {
+    .ai-analyze-row {
+        display: block;
+    }
+}
 .ai-analyze-column {
     width: 18%;
 }
-.ai-icon-container {
+@media screen and (max-width: 900px) {
+    .ai-analyze-column {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+.pie-container {
     position: relative;
     margin-bottom: 70px;
+}
+@media screen and (max-width: 900px) {
+    .pie-container {
+        margin-bottom: 10px;
+    }
+}
+.chat-container {
+    position: relative;
+    margin-bottom: 74px;
+}
+@media screen and (max-width: 900px) {
+    .chat-container {
+        margin-bottom: 14px;
+    }
+}
+.graph-container {
+    position: relative;
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 900px) {
+    .graph-container {
+        margin-bottom: 20px;
+    }
 }
 .pie {
     height: 50px;
     width: 50px;
-    margin-bottom: 20px;
-}
-.pie img {
-    height: 100%;
-    width: 100%;    
+    margin-top: -10px;
 }
 .chat {
     height: 40px;
     width: 40px;
-    margin-bottom: 30px;
-}
-.chat img {
-    height: 100%;
-    width: 100%;
+    margin-top: -4px;
 }
 .graph {
     height: 30px;
     width: 30px;
-    margin-bottom: 40px;
 }
+.pie img,
+.chat img,
 .graph img {
     height: 100%;
-    width: 100%;
+    width: 100%;    
 }
 .ai-plus {
     position: absolute;
@@ -802,7 +869,6 @@ nav a {
     margin-bottom: 20px;
     line-height: 1.5;
     font-size: 17px;
-    height: 100px;
 }
 .learn-more-container{
     width: 120px;
@@ -829,11 +895,36 @@ nav a {
     font-weight: 400;
     margin: 250px 0 180px 0;
 }
+@media screen and (max-width: 500px) {
+    .how-title h1 {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .how-title h1 {
+        margin: 50px 0 100px 0;
+    }
+}
+@media screen and (max-width: 365px) {
+    .how-title h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .how-title h1 {
+        font-size: 70px;
+    }
+}
 .give-row {
     display: flex; 
     margin-right: -50px;
     position: relative;
     overflow: hidden;
+}
+@media screen and (max-width: 1120px) {
+    .give-row {
+        display: block;
+    }
 }
 .slant {
     width: 100%;
@@ -846,11 +937,26 @@ nav a {
     border-radius:50px;
     margin-right: -55%;
 }
+@media screen and (max-width: 1120px) {
+    .slant {
+        display: none;
+    }
+}
 .give-column {
     width: 50%;
     display: flex;
     align-items: center;
     z-index: 1;
+}
+@media screen and (max-width: 1120px) {
+    .give-column {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .give-column {
+        align-items: flex-start;
+    }
 }
 .give-blob-column {
     width: 0%; 
@@ -861,8 +967,66 @@ nav a {
     margin-top: 10px;
     border-radius: 50px;
 }
+@media screen and (max-width: 1120px) {
+    .give-blob-column {
+        width: 100%; 
+        margin-left: -5%;
+        border-radius: 0;
+        background: transparent;
+    }
+}
+@media screen and (max-width: 500px) {
+    .give-blob-column {
+        height: 380px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .give-blob-column {
+        margin-left: -10%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .give-blob-column {
+        margin-left: -20%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .give-blob-column {
+        margin-left: -21%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .give-blob-column {
+        margin-left: -24%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .give-blob-column {
+        margin-left: -10%;
+    }
+}
+@media screen and (max-width: 365px) {
+    .give-blob-column {
+        margin-left: -20%;
+    }
+}
 .give-numbers-column {
     margin-right: 100px;
+}
+@media screen and (max-width: 600px) {
+    .give-numbers-column {
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .give-numbers-column {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .give-numbers-column {
+        display: none;
+    }
 }
 .give-numbers-column div {
     padding: 30px;
@@ -886,7 +1050,27 @@ nav a {
     font-size: 60px;
     font-weight: 400;
 }
-
+@media screen and (max-width: 720px) {
+    .give-column h2 {
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .give-column h2 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .give-column h2 {
+        font-size: 34px;
+        width: 220px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .give-column h2 {
+        width: 90%;
+    }
+}
 .blob-container {
     margin-left: 100px;
     position: relative;
@@ -899,8 +1083,29 @@ nav a {
     right: 135px;
     top: 140px;
 }
+@media screen and (max-width: 1120px) {
+    .blob {
+        left: 135px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .blob {
+        left: 35px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .blob {
+        top: 120px;
+        left: 5px;
+    }
+}
 .blob img {
     height: 45%;
+}
+@media screen and (max-width: 500px) {
+    .blob img {
+        height: 40%;
+    }
 }
 .hex-container {
     position: absolute; 
@@ -908,6 +1113,22 @@ nav a {
     right: 50px; 
     height: 400px; 
     width: 400px;
+}
+@media screen and (max-width: 1120px) {
+    .hex-container {
+        left: 50px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .hex-container {
+        left: -50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hex-container {
+        height: 275px; 
+        width: 275px;
+    }
 }
 .hex-relative {
     position: relative;
@@ -925,12 +1146,24 @@ nav a {
     height: 80%;
     width: 80%;
 }
+@media screen and (max-width: 500px) {
+    .hex-2 {
+        top: 27px;
+        left: 27px;
+    }
+}
 .hex-3 {
     position: absolute;
     top: 80px;
     left: 80px;
     height: 60%;
     width: 60%;
+}
+@media screen and (max-width: 500px) {
+    .hex-3 {
+        top: 54px;
+        left: 54px;
+    }
 }
 .hex-4 {
     position: absolute;
@@ -939,12 +1172,24 @@ nav a {
     height: 40%;
     width: 40%;
 }
+@media screen and (max-width: 500px) {
+    .hex-4 {
+        top: 81px;
+        left: 81px;
+    }
+}
 .hex-5 {
     position: absolute;
     top: 160px;
     left: 160px;
     height: 20%;
     width: 20%;
+}
+@media screen and (max-width: 500px) {
+    .hex-5 {
+        top: 108px;
+        left: 108px;
+    }
 }
 .hex-icon {
     position: absolute;
@@ -957,26 +1202,61 @@ nav a {
     align-items: center;
     border-radius: 5px;
 }
+@media screen and (max-width: 500px) {
+    .hex-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
 .hex-icon img {
     padding: 8px;
     height: 100%;
     width: 100%;
 }
+@media screen and (max-width: 500px) {
+    .hex-icon img {
+        padding: 4px;
+    }
+}
 .hex-home {
     top: 14px;
     left: 185px;
+}
+@media screen and (max-width: 500px) {
+    .hex-home {
+        top: 8px;
+        left: 127px;
+    }
 }
 .hex-damage {
     top: 103px;
     left: 30px;
 }
+@media screen and (max-width: 500px) {
+    .hex-damage {
+        top: 70px;
+        left: 22px;
+    }
+}
 .hex-pets {
     top: 274px;
     left: 30px;
 }
+@media screen and (max-width: 500px) {
+    .hex-pets {
+        top: 190px;
+        left: 22px;
+    }
+}
 .hex-income {
     top: 363px;
     left: 185px;
+}
+@media screen and (max-width: 500px) {
+    .hex-income {
+        top: 250px;
+        left: 127px;
+    }
 }
 .hex-medical {
     top: 265px;
@@ -987,12 +1267,32 @@ nav a {
     width: 70px;
     border-radius: 20px;
 }
+@media screen and (max-width: 500px) {
+    .hex-medical {
+        top: 180px;
+        right: 7px;
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+    }
+}
 .hex-medical img {
     padding: 15px
+}
+@media screen and (max-width: 500px) {
+    .hex-medical img {
+        padding: 7px
+    }
 }
 .hex-digital {
     top: 103px;
     right: 30px;
+}
+@media screen and (max-width: 500px) {
+    .hex-digital {
+        top: 70px;
+        right: 22px;
+    }
 }
 .medical {
     background: rgb(224,253,255);
@@ -1019,6 +1319,41 @@ nav a {
     flex-direction: column;
     align-items: center;
     z-index: 9999;   
+}
+@media screen and (max-width: 1400px) {
+    .medical-blue-container {
+        margin-left: 38%; 
+    }
+}
+@media screen and (max-width: 1200px) {
+    .medical-blue-container {
+        margin-left: 33%; 
+    }
+}
+@media screen and (max-width: 1120px) {
+    .medical-blue-container {
+        margin-top: -380px;
+        margin-left: 60%; 
+    }
+}
+@media screen and (max-width: 950px) {
+    .medical-blue-container {
+        margin-left: 65%; 
+    }
+}
+@media screen and (max-width: 800px) {
+    .medical-blue-container {
+        margin-left: 60%; 
+        transform: scale(.8);
+    }
+}
+@media screen and (max-width: 720px) {
+    .medical-blue-container {
+        transform: scale(1);
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%
+    }
 }
 .stethoscope {
     width: 90px;
@@ -1072,6 +1407,26 @@ nav a {
     flex-direction: column; 
     align-items: flex-end;
     margin-top: -120px;
+}
+@media screen and (max-width: 1400px) {
+    .categories-container {
+        transform: scale(.9);
+        width: 100%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .categories-container {
+        transform: scale(1);
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .categories-container {
+        margin-top: 20px;
+    }
 }
 .category-row {
     display: flex;
@@ -1324,6 +1679,11 @@ nav a {
     right: 21.5%;
     top: -15%;
 }
+@media screen and (max-width: 1120px) {
+    .blob-grid {
+        display: none;
+    }
+}
 .blob-grid .grid-row {
     margin: 23px 0 !important;
 }
@@ -1336,6 +1696,11 @@ nav a {
     left: 36%;
     top: 175px;
     z-index: -1;
+}
+@media screen and (max-width: 1120px) {
+    .medical-grid {
+        display: none;
+    }
 }
 .score-grid {
     position: absolute;
@@ -1374,6 +1739,7 @@ footer {
     padding-left: 25%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 .top-footer-row {
     display: flex;
