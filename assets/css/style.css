@@ -1323,6 +1323,11 @@ nav a {
         overflow: hidden;
     }
 }
+@media screen and (max-width: 450px) {
+    .protection-section {
+        margin-bottom: 100px;
+    }
+}
 @media screen and (max-width: 400px) {
     .protection-section {
         padding: 0 20px;
@@ -2028,6 +2033,21 @@ footer {
     z-index: 1;
     overflow: hidden;
 }
+@media screen and (max-width: 1300px) {
+    footer {
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    footer {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 400px) {
+    footer {
+        padding: 0 20px 100px 20px;
+    }
+}
 .top-footer-row {
     display: flex;
     overflow: hidden;
@@ -2040,12 +2060,47 @@ footer {
     z-index: 2;
     height: 100%;
 }
+@media screen and (max-width: 700px) {
+    .get-your {
+        width: 100%;
+    }
+}
 .get-your h1 {
     font-size: 110px;
     width: 700px;
     line-height: .9;
     color: var(--text-primary);
     margin-top: 200px;
+}
+@media screen and (max-width: 700px) {
+    .get-your h1 {
+        font-size: 90px;
+        width: 100%;
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 545px) {
+    .get-your h1 {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 465px) {
+    .get-your h1 {
+        font-size: 60px;
+        font-weight: 500;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 374px) {
+    .get-your h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .get-your h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
 }
 .footer-slant {
     width: 10000px;
@@ -2057,12 +2112,25 @@ footer {
     z-index: 1;
     border-radius: 50px;    
 }
+@media screen and (max-width: 700px) {
+    .footer-slant {
+        width: 0;
+        display: none; 
+    }
+}
 .footer-top-white {
     height: 1000px;
     margin-bottom: -500px;
     background: white;
     z-index: -1;
     width: 0%;
+}
+@media screen and (max-width: 700px) {
+    .footer-top-white {
+        height: 0;
+        margin-bottom: 0;
+        display: none;
+    }
 }
 .start-with-btn {
     margin-top: 50px;
@@ -2071,6 +2139,11 @@ footer {
     background-color: var(--btn-blue);
     text-align: center;
     z-index: 10;
+}
+@media screen and (max-width: 325px) {
+    .start-with-btn {
+        width: 100%;
+    }
 }
 .start-with-btn p {
     color: white;
@@ -2084,6 +2157,16 @@ footer {
     display: flex;
     z-index: 10;
 }
+@media screen and (max-width: 1050px) {
+    .footer-bottom {
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .footer-bottom {
+        margin-top: 120px;
+    }
+}
 .footer-bottom-left p {
     margin-top: 15px;
     color: var(--text-dark-gray);
@@ -2096,14 +2179,50 @@ footer {
     margin-left: 270px;
     display: flex;
 }
+@media screen and (max-width: 1050px) {
+    .footer-bottom-right {
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 825px) {
+    .footer-bottom-right {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .footer-bottom-right {
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .footer-bottom-right {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .footer-bottom-right {
+        display: block;
+    }
+}
 .footer-links,
 .contact-info,
 .address {
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 365px) {
+    .contact-info {
+        margin-top: 40px;
+    }
+}
 .address {
     margin-top: 30px;
+}
+@media screen and (max-width: 450px) {
+    .address {
+        margin-top: 20px;
+    }
 }
 .footer-links a {
     margin-bottom: 20px;
@@ -2112,6 +2231,11 @@ footer {
     font-size: 14px;
     font-weight: 500; 
 }
+@media screen and (max-width: 450px) {
+    .footer-links a {
+        margin-bottom: 10px;
+    }
+}
 .contact-info p,
 .address p {
     color: var(--text-primary);
@@ -2119,6 +2243,42 @@ footer {
     font-weight: 500;
     margin-left: 150px;
     margin-bottom: 20px;  
+}
+@media screen and (max-width: 1050px) {
+    .contact-info p,
+    .address p {
+        margin-left: 100px; 
+    }
+}
+@media screen and (max-width: 825px) {
+    .contact-info p,
+    .address p {
+        margin-left: 50px; 
+    }
+}
+@media screen and (max-width: 750px) {
+    .contact-info p,
+    .address p {
+        margin-left: 40px; 
+    }
+}
+@media screen and (max-width: 700px) {
+    .contact-info p,
+    .address p {
+        margin-left: 80px; 
+    }
+}
+@media screen and (max-width: 450px) {
+    .contact-info p,
+    .address p {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .contact-info p,
+    .address p {
+        margin-left: 0px;
+    }
 }
 .grid-footer-btn {
     position: absolute;
@@ -2143,7 +2303,7 @@ footer {
     justify-content: space-between;
     margin: 27px 0;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .grid-row {
         display: none;
     }
