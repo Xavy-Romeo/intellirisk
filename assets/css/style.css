@@ -709,7 +709,7 @@ nav a {
     position: absolute;
     width: 220px;
     z-index: 1;
-    left: 33.5%;
+    left: 36%;
     top: 10%;
 }
 /* end top section bottom styles */
@@ -1527,7 +1527,7 @@ nav a {
 }
 .protection-title {
     margin-top: 50px;
-    margin-left: 240px;
+    margin-left: 380px;
     width: 500px;
 }
 @media screen and (max-width: 1270px) {
@@ -1627,7 +1627,7 @@ nav a {
     width: 450px; 
     z-index: 10;
     border-radius: 20px;
-    margin-left: 170px;
+    margin-left: 300px;
     box-shadow: -20px -20px 50px 5px rgba(0,0,0,.03);
 }
 @media screen and (max-width: 1375px) {
@@ -1847,7 +1847,7 @@ nav a {
     }
 }
 .testimonial {
-    margin-left: 170px;
+    margin-left: 380px;
     width: 440px;
     background: white;
 }
@@ -1903,7 +1903,7 @@ nav a {
 .laptop-floor {
     height: 280px;
     margin-top: 100px;
-    margin-left: 250px; 
+    margin-left: 460px; 
 }
 @media screen and (max-width: 1400px) {
     .laptop-floor {
@@ -1968,8 +1968,8 @@ nav a {
     position: absolute;
     width: 440px;
     z-index: 2;
-    right: 21.5%;
-    top: -15%;
+    right: 25%;
+    top: -22%;
 }
 @media screen and (max-width: 1120px) {
     .blob-grid {
@@ -1985,8 +1985,8 @@ nav a {
 .medical-grid {
     position: absolute;
     width: 220px;
-    left: 36%;
-    top: 175px;
+    left: 37%;
+    top: 20px;
     z-index: -1;
 }
 @media screen and (max-width: 1120px) {
@@ -1997,28 +1997,28 @@ nav a {
 .score-grid {
     position: absolute;
     width: 440px;
-    left: 50px;
-    top: 800px;
+    left: 180px;
+    top: 650px;
     z-index: -1;
 }
 .couch-grid {
     position: absolute;
     width: 220px;
-    right: 110px;
-    top: 1240px;
+    right: 290px;
+    top: 1100px;
     z-index: -1; 
 }
 .laptop-grid {
     position: absolute;
     width: 220px;
-    left: 530px;
+    left: 740px;
     bottom: 160px;
     z-index: -1;
 }
 .phone-grid {
     position: absolute;
     width: 220px;
-    right: 150px;
+    right: 240px;
     bottom: 120px;
     z-index: -1;
 }
